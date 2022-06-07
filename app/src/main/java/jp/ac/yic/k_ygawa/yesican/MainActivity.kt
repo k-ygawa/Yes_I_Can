@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() , SensorEventListener {
         var msec: Long = (record_time % 1000) /100
 
         val txt: TextView = findViewById(R.id.messageTextView)
-        txt.text = "記録: " + sec.toString() + "."+ msec.toString() +" 秒"
+        txt.text = "新記録: " + sec.toString() + "."+ msec.toString() +" 秒"
 
         val img: ImageView = findViewById(R.id.imageView)
         if (sec == 3L && msec == 0L) {
